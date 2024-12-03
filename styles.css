@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Onest:wght@100..900&family=Sora:wght@100..800&display=swap");
+
+:root {
+  --bg-2: #fafafa;
+  --bg-1: #ffffff;
+  --bg-tag: #f2eafd;
+  --color-tag: #7c19ee;
+  --color-text: #8e929d;
+  --color-border: #eef1f5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Sora", serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100vh;
+
+  background-color: var(--bg-2);
+}
+
+section,
+section img {
+  height: fit-content;
+  border-radius: 10px;
+}
+
+section {
+  background-color: var(--bg-1);
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+section div {
+  width: 360px;
+  padding: 16px;
+}
+
+section img {
+  width: 360px;
+  margin-bottom: 16px;
+}
+
+section .tag {
+  font-size: 0.625rem;
+  font-weight: 500;
+  background-color: var(--bg-tag);
+  color: var(--color-tag);
+  padding: 4px 16px;
+  border-radius: 16px;
+}
+
+section h1 {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-top: 16px;
+  margin-bottom: 6px;
+}
+
+section p {
+  font-size: 0.875rem;
+  color: var(--color-text);
+  margin-bottom: 20px;
+}
+
+section div:nth-child(1) {
+  border-bottom: 1px solid var(--color-border);
+}
+
+section .author {
+  color: var(--color-text);
+  font-size: 0.75rem;
+}
